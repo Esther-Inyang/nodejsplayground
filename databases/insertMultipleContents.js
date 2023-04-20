@@ -13,7 +13,7 @@ dbConnection.connect((err)=>{
     var data = "INSERT INTO customers (name, address) VALUES ?"
     // var values = [["May peterson", "74, mayel bason estate"], ["Larry Grey", "11 Ontario mora way"], ["Roda Wema", "193 Ebel Medason crescent"]]
     var newValues = [["Tressy Ela","39, Ohio Province estate"]]
-    dbConnection.query(data, [newValues],(err,result)=>{
+    dbConnection.query(data, [newValues], (err,result)=>{
         if (err) throw err;
         console.log("New Contents INSERTED!" + result.affectedRows)
     })
