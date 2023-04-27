@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mysql": "^2.18.1",
+    "upper-case": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
