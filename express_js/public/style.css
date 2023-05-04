@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*****************************Style-Guide-start********************************/
+color{
+    color: hsl(193, 38%, 86%); /*Light Cyan*/
+    color: hsl(150, 100%, 66%); /*Neon Green*/
+    color: hsl(217, 19%, 38%); /*Grayish blue*/
+    color: hsl(217, 19%, 24%); /*Dark Grayish Blue*/
+    color: hsl(218, 23%, 16%); /*Dark Blue*/
+}
+ 
+fonts{
+   font-family: Manrope; /*(https://fonts.google.com/specimen/Manrope)*/
+   font-size: 28px; /*(quote)*/
+   font-weight: 800;
+}
+/*****************************Style-Guide-start********************************/
+
+html{
+    font-size: 65.7%;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.advice-container{
+    width: 90%;
+    padding: 3rem .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: hsl(217, 19%, 24%);
+}
+
+.advice-title{
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: hsl(150, 100%, 66%);
+}
+
+.advice-number{
+    
+}
+
+.advice{
+    font-size: 2.8rem;
+    color: hsl(193, 38%, 86%);
+    margin: 4rem 0;
+}
+
+.pattern-img{
+    width: 90%;
+    height: 3rem;
+    margin: 0 auto;
+    background-image: url("./images/pattern-divider-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dice-div{
+    width: 6rem;
+    height: 6rem;
+    margin: 2rem auto -6rem;
+    /* padding: 2rem; */
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    background-color: hsl(150, 100%, 66%);
+    transition: .2s linear;
+}
+
+.dice-div:hover{
+    box-shadow: 0 4px 20px hsl(150, 100%, 66%);
+}
+
+.dice-img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.form{
+    width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.input-label{
+    color: black;
+    font-size: 2rem;
+}
+
+.input{
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.submit{
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    display: block;
+    margin-inline: auto;
+    margin-top: 2rem;
+    background-color: darkcyan;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.submit:hover{
+    background-color: rgb(2, 165, 165);
+}
+
+/* Attribution */
+.attribution { 
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.1rem; 
+    padding: 1rem;
+    text-align: center; 
+    border-radius: .5rem;
+    color: hsl(193, 38%, 86%);
+    background-color: hsl(228, 45%, 44%);
+    position: absolute;
+    bottom: 1rem;
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: hsl(150, 100%, 66%); 
+}
+
+@media screen and (min-width: 992px){
+    .advice-container{
+        width: 40%;
+        padding: 4rem;
+    }
+
+    .pattern-img{
+        background-image: url("./images/pattern-divider-desktop.svg");
+    }
+
+    .attribution { 
+        width: 40%;
+        font-size: 1.1rem; 
+    }
+}
+
+@media screen and (min-width: 1440px){
+    
+}
