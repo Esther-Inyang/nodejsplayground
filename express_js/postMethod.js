@@ -14,19 +14,20 @@ app.get("/api/workers", (req,res)=>{
    res.status(200).json({success: true, data: workers})
 })
 
-app.post('/api/people', (req,res)=>{
+app.post('/login', (req,res)=>{
     const {name} = req.body;
 
     if(!name){ 
-        res.status(400).json({success: false, msg: "Please enter a name"})
+        // ALWAYS ADD RETURN To avoid Header Errors
+       return res.status(400).json({success: false, msg: "Please enter a name"})
     }
-    res.status(201).json({success:true, person:name});
+    res.status(200).json({success:true, person:name});
 })
 
 app.post('/login', (req,res)=>{
     const {name} = req.body;
     if(name){
-        res.status(200).send(`Welcome ${name}`)
+     return  res.status(200).send(`Welcome ${name}`)
     }
     res.status(401).send('Please provide a name')
 })
